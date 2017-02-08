@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MyWebsite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="Styles/StyleSheet.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 494px;
+            height: 286px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+         <div id="wrapper">
+         <div id="banner">
+             <asp:Image ID="Image1" runat="server" />
+         
+         </div>
+         </div>
+
+         <div id="navigation">
+         <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+             <Items>
+                 <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                 <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+                 <asp:MenuItem Text="Services" Value="Services">
+                     <asp:MenuItem Text="User control" Value="User control"></asp:MenuItem>
+                 </asp:MenuItem>
+                 <asp:MenuItem Text="Login" Value="Login"></asp:MenuItem>
+             </Items>
+             </asp:Menu>
+         </div>
+         <div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <p>
+        <img alt="" class="auto-style1" src="Images/riLnLqXoT.png" /></p>
+</body>
+</html>
