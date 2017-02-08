@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-       
-       
+
+
         <Grid.RowDefinitions>
-           
-             
-            <RowDefinition Height="51*"/>
-            <RowDefinition Height="85*"/>
+
+
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="79*"/>
             <RowDefinition Height="127*"/>
             <RowDefinition Height="57*"/>
         </Grid.RowDefinitions>
 
         <DockPanel Grid.Row="0">
-            
+
             <Label x:Name="lblHeader" Content="Lucky lotto number generator" FontWeight="Black" Width="200" HorizontalAlignment="Center" VerticalAlignment="Top"></Label>
 
         </DockPanel>
@@ -27,21 +27,77 @@
             <StackPanel Orientation="Horizontal">
                 <Label Name="lblChooseLottoType" Content=" Button" Width="75"></Label>
             </StackPanel>
-            </DockPanel>
+        </DockPanel>
 
-            <StackPanel Margin="150,0,0,0" Orientation="Horizontal" HorizontalAlignment="Right"></StackPanel>
-        <Button Name="btnIrishLotto" Click="btnIrishLotto_Click" Margin="10" Width="100" Content="Irish" ></Button>
-                <Button Name="btnUKLotto" Click="btnUKLotto_Click" Margin="10" Width="100" Content="UK"></Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="0"/>
+        <Button Name="btnIrishLotto" Click="btnIrishLotto_Click" Margin="140,10,285,32" Content="Irish" Grid.Row="1" />
+        <Button Name="btnUKLotto" Click="btnUKLotto_Click" Margin="270,10,147,32" Content="UK" Grid.Row="1"/>
 
-                <DockPanel Grid.Row="2">
-                    <StackPanel>
-                        <StackPanel HorizontalAlignment="Center">
-                            <Label Content=""></Label>
+        <DockPanel Grid.Row="2">
+            <StackPanel>
+                <StackPanel HorizontalAlignment="Center">
+                    <Label Content=""></Label>
 
-                        </StackPanel>
-                    </StackPanel>
-                </DockPanel>
-            
+                </StackPanel>
+                private void StartApplication()
+                {
+                int arrayPosition=0;
+                int randomNumber=0;
+                lottoNumbers.Initialize();
+                do
+                {
+                } while (true);
+                
+                private void GenerateRandomNumber (int maxNumberRange)
+                {
+                int number =0;
+                Random random=new Random();
+                number=random.Next(1,maxNumberRange);
+                lottoNumbers.initialize();
+                do
+                {
+                randomNumber=GenerateRandomNumber(maxNumberRange);
+                } while (true);
+                }
+               }
+                private bool CheckIfExists(int number)
+                {
+                bool exists=false;
+                foreach (var number in lottoNumbers)
+                {
+                if (number == newNumber)
+                }
+                 {
+                  exists=true;
+                 }
+                }
+                return exists;
+                }
+                
+                lottoNumbers.Initialize();
+                do
+                {
+                    randomNumber= GenerateRadomNumber(maxNumberRange_);
+                    bool exists=checkIfExists(randomNumber);
+                    if(!exists)
+                    {
+                        lottoNumbers[arrayPosition]=randomNumber;
+                        arrayPosition++;
+                    }
+                }while (arrayPosition < lottoNumbers.Length
+                 return exists;
+                }
+                 private void DisplayResults()
+                  tbxResult1.Text=lottoNumbers[0].toString();  
+                  tbxResult2.Text=lottoNumbers[1].toString();
+                  tbxResult3.Text=lottoNumbers[2].toString();
+                  tbxResult4.Text=lottoNumbers[3].toString();  
+                  tbxResult5.Text=lottoNumbers[4].toString(); 
+                  tbxResult6.Text=lottoNumbers[5].toString();  
+                                        
+            </StackPanel>
+        </DockPanel>
+
 
 
     </Grid>
