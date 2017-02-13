@@ -13,5 +13,24 @@ namespace MyWebsite.Pages
         {
 
         }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+            string myUsername = "Joe";
+            string myPassword = "soap";
+            string userName = TbxUsername.Text;
+            string password = TbxPassword.Text;
+            if (userName == myUsername && password == myPassword)
+            {
+                lblSuccess.Visible = Visible;
+                lblSuccess.Text = "Login Successfull";
+
+            }
+            else
+            {
+                lblSuccess.Visible = Visible;
+                lblSuccess.Text = "Login failed";
+            }
+        }
     }
 }

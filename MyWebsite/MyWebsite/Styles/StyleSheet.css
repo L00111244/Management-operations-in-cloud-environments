@@ -71,3 +71,15 @@
     padding: 20px;
     min-height: 400px;
 }
+
+.header
+{
+    font-size: large;
+    align-content:center;
+}
+
+.labels
+{
+    font-size: medium;
+    font-family:'Adobe Gothic Std';
+}
